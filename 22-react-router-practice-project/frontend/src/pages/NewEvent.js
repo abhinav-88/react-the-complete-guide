@@ -1,16 +1,6 @@
-import EventForm from '../components/EventForm';
-const NewEventPage = () => {
-    function submitHandler(event) {
-        event.preventDefault();
 
-    }; 
-  return <EventForm />;
+import EventForm from "../components/EventForm";
+const NewEventPage = () => {
+  return <EventForm method="post" />;
 };
 export default NewEventPage;
-
-export async function action() {
-  fetch('http://localhost:8080/events', {
-    method: 'POST',
-    body: 
-  });
-};
